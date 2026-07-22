@@ -156,3 +156,35 @@ class p{
         }
         
     }
+    ==============
+       //one way
+*****
+****
+***
+**
+*
+public void pattern(int n){
+    //outer
+for(int i=1;i<=n;i++){
+    //inner
+    for(int j=n;j>=i;j--){
+   System.out.print("*");
+    }
+    System.out.println();
+}
+}
+//2nd way
+public void pattern(int n){
+    //outer
+for(int i=1;i<=n;i++){
+    
+    for(int j=1;j<=n;j++){
+   if(i+j<=n+1){
+    System.out.print("*");
+                
+}
+ else{
+                    
+ System.out.print("_");
+                }
+
