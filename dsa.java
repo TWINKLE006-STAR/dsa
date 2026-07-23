@@ -187,4 +187,36 @@ for(int i=1;i<=n;i++){
                     
  System.out.print("_");
                 }
-
+-----------------------------------------
+   //one way upper right
+public void pattern(int n){
+    //outer
+for(int i=1;i<=n;i++){
+    
+    for(int j=1;j<=n;j++){
+   if(j-i>=0){
+    System.out.print("*");
+                
+}
+ else{
+                    
+ System.out.print("_");
+                }
+    }
+    System.out.println();
+}
+}
+//2nd way upper right
+public void pattern(int n){
+    //outer
+for(int i=1;i<=n;i++){
+    for(int j=1;j<=i-1;j++){
+       System.out.print("_");
+    
+    }
+            for(int k=n;k>=i;k--){
+                System.out.print("*");
+       } 
+    
+System.out.println();
+    }
